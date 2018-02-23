@@ -29,14 +29,110 @@ Kjøretidsanalyse
                            /_/\____/\____/  \___/\____/ /_/
 
 
-
-
+Innlevering utkast2
 
 
 (Deloppga a)
 Så forskjellen på kjøretidsunntak og skjekkede unntak blir skjekket ved kompileringstid mens kjøretidsunntak blir kjekket ved runtime.
 I vårt tilfelle er det kjøretidsunntak jeg har gått for. Kjøretidsunntak skyldes som oftest logiske feil i koden. Logiske feil er i dette
 tilfellet at man putter en enhet inn i arrayet når arrayet er fult, eller prøver å hente noe ut av arrayet når det er tomt.
+
+
+(DELOPPGAVE C)
+size() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+         Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+         en O(1) notasjon.
+
+
+addFirst() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+             Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+             en O(1) notasjon.
+
+
+
+pullFirst() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+              Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+              en O(1) notasjon.
+
+
+
+peekFirst() -Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+             Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+             en O(1) notasjon.
+
+
+
+
+(DELOPPGAVE E)
+addLast() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+            Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+            en O(1) notasjon.
+
+
+
+pullLast() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+             Vi ser også at det ikke er noen løkker i metoden. Og dette gir oss også en pediksjon på at det er
+             en O(1) notasjon.
+
+
+
+peekLast() - Er en O(1) notasjon fordi den alltid vil kjøre til samme tid uavhengig av størrelsen på dataen.
+             Vi er også at det ikke er noen løkker i metoden. Og dette gir oss også en pekepinn på at det er en O(1) notasjon.
+
+(DELOPPGAVE G)
+
+clear() - Er også en O(N) notasjon. Årsaken til det er at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+
+
+contains() - Er også en O(N) notasjon. Årsaken til det er at ytelse vil vokse lineært og i direkte forhold til størrelsen på inngangsdataen.
+             Det er også løkker i metoden som gir oss en pekepinn på at det er en O(N) notasjon.
+
+
+toArray() - toArray mener jeg er en O(N) notasjon fordi den kopierer et array.
+
+
+
+(DELOPPGAVE H)
+
+
+Så hvis vi ser på de to deloppgavene C og E ser vi at ser vi at de er ganske like når det kommer til O notasjonene.
+addFirst() og addLast() er begge O(1) notasjoner.
+
+Begge pull metodene er O(1) notasjoner.
+
+Og til slutt har vi begge peek metodene. Disse er O(1) notasjoner dette er fordi den alltid vil kjøre til samme tid uavhengig av
+størrelsen på dataen. begge returnerer bare en variabel som er en del av feltet.
+
+SÅ ALLE LAST OG FIRST METODENE ER LIKE NÅR DET KOMMER TIL STOR O NOTASJON.
+
+
+
+(DELOPPGAVE I)
+
+Den første metoden tar en samling med Integers og regner ut gjennomsnittet av denne samlingen.
+Vi går gjennom 1 for løkke. Dette betyr at vi her snakker om en O(N) notasjon.
+
+Den andre metoden derimot IDeque tar i bruk metoden over(Average) inni en for løkke som gjør at vi får en nøstet løkke.
+Denne metoden er derfor en O(N^2) notasjon.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-FRA FØRSTE INNLEVERING-
+
 
 
 (DELOPPGAVE C)

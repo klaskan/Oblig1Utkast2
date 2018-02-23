@@ -38,7 +38,14 @@ public class ArrayDeque<E> implements IDeque<E> {
         this.unitsInDeque = 0;
         this.size = størrelse;
     }
-
+    //Til testingen
+    public E getFirstElement(){
+        return dequeArray[0];
+    }
+    //Til testingen
+    public E getLastElement(){
+        return dequeArray[dequeArray.length-1];
+    }
 
     public void printArray(){
         for(E element : dequeArray){
@@ -129,20 +136,13 @@ public class ArrayDeque<E> implements IDeque<E> {
     @Override
     public boolean contains(Object elem) {
         for(E enhet : dequeArray){
-            if(enhet.equals(elem)){
+            if(enhet == elem){
                 return true;
             }
         }
         return false;
     }
 
-    /**
-     * Forsåt ikke hensikten med denne metoden...
-     *
-     * @param a
-     * @param <T>
-     * @return
-     */
 
     @SuppressWarnings("unchecked")
     @Override
@@ -155,5 +155,6 @@ public class ArrayDeque<E> implements IDeque<E> {
     @Override
     public void clear() {
         Arrays.fill(dequeArray, null);
+
     }
 }
